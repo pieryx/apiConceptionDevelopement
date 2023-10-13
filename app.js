@@ -9,6 +9,5 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/api/helloworld', helloWord)
 app.use('/*',error404)
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+
+module.exports = {app,port};
